@@ -120,7 +120,7 @@ nav img {
   font-size: 3rem;
   font-family: "roboto";
   margin-left: 1rem;
-  font-weight: bold;  
+  font-weight: bold;
   text-shadow: -1px 0 rgb(255, 255, 255), 0 1px white, 1px 0 white, 0 -1px white;
 }
 
@@ -222,4 +222,25 @@ iframe {
 .video {
   display: flex;
   align-items: center;
+}
+
+.footer-container {
+  background-image: linear-gradient(red, yellow);
+  border: 5px black;
+  height: 50px;
+}
+
+.footer-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+}
+
+.footer-heading a {
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  font-family: "roboto";
+  padding-right: 100px;
 }
