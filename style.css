@@ -4,8 +4,13 @@
 }
 
 body {
-  background: rgb(131,58,180);
-  background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
 }
 
 nav {
@@ -97,7 +102,7 @@ nav img {
   margin-top: 50px;
   margin-bottom: 100px;
   top: 100px;
-  font-family: 'Mohave', sans-serif;
+  font-family: "Mohave", sans-serif;
   font-size: 25px;
   text-shadow: 2px 2px 5px white;
 }
@@ -115,17 +120,19 @@ nav img {
   font-size: 3rem;
   font-family: "roboto";
   margin-left: 1rem;
-  font-weight: bold;
+  font-weight: bold;  
+  text-shadow: -1px 0 rgb(255, 255, 255), 0 1px white, 1px 0 white, 0 -1px white;
 }
 
 #logo span {
   color: red;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .form-control {
   background-color: black;
   color: white;
-  border:1px solid #00ff00;
+  border: 1px solid #00ff00;
   width: 400px;
   padding: 15px;
   margin: 7px 0;
@@ -137,7 +144,7 @@ nav img {
   color: white;
   padding: 15px 30px;
   border-radius: 10px;
-  border:1px solid #00ff00;
+  border: 1px solid #00ff00;
 }
 .btn.btn-outline-dark:hover {
   background-color: #c27474;
@@ -196,7 +203,7 @@ iframe {
 }
 
 .textinfo3 {
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
   margin-top: 35px;
   margin-left: 530px;
 }
@@ -207,7 +214,7 @@ iframe {
 }
 
 .videos {
-  display:flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
 }
