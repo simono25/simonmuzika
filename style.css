@@ -11,13 +11,15 @@ body {
     rgba(203, 97, 97, 1) 50%,
     rgba(218, 169, 100, 1) 100%
   );
+  position: relative;
+  min-height: 100vh;
 }
 
 nav {
   display: flex;
   background-color: rgba(255, 255, 255, 0.7);
   align-items: center;
-  padding: 5px;
+  padding: 15px;
   -webkit-box-shadow: 11px 12px 10px 8px rgba(0, 0, 0, 0.43);
   box-shadow: 11px 12px 10px 8px rgba(0, 0, 0, 0.43);
 }
@@ -41,6 +43,9 @@ ul li {
   display: inline-block;
   padding: 10px;
   margin-right: 15px;
+}
+ul li:last-of-type {
+  margin-right: 0;
 }
 
 ul li:hover {
@@ -119,7 +124,6 @@ nav img {
 #logo {
   font-size: 3rem;
   font-family: "roboto";
-  margin-left: 1rem;
   font-weight: bold;
   text-shadow: -1px 0 rgb(255, 255, 255), 0 1px white, 1px 0 white, 0 -1px white;
 }
@@ -179,33 +183,25 @@ iframe {
 }
 
 .containers {
-  min-height: 818px;
+  padding: 1rem;
 }
 
 .photosimon {
   width: 250px;
   height: 300px;
   border-radius: 50px;
-  margin-top: 50px;
-  margin-left: 50px;
 }
 
 .textinfo {
-  margin-left: 325px;
-  margin-top: -226px;
   font-family: "roboto";
   font-weight: bold;
 }
 
 .textinfo2 {
-  margin-top: 23px;
-  margin-left: 327px;
 }
 
 .textinfo3 {
   font-family: "Bebas Neue", cursive;
-  margin-top: 35px;
-  margin-left: 530px;
 }
 
 .buttonpaypal {
@@ -224,25 +220,35 @@ iframe {
   align-items: center;
 }
 
-.footer-container {
-  background-color: black;
-  border: 5px black;
-  height: 51px;
-  position: absolute;
-  width: 100%;
-}
-
-.footer-heading {
+.footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  top: 50%;
+  background: black;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 15px 0;
 }
 
-.footer-heading a {
-  text-decoration: none;
-  font-size: 25px;
-  color: white;
-  font-family: "roboto";
-  padding-right: 100px;
+.footer a {
+  margin-right: 30px;
+}
+
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+  }
+  nav ul {
+    flex-direction: column;
+    margin-left: 0;
+  }
+
+  nav ul li {
+    margin-bottom: 5px;
+    margin-right: 0;
+  }
+  nav ul li:last-of-type {
+    margin-bottom: 0;
+  }
 }
