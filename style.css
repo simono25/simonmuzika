@@ -125,12 +125,10 @@ nav img {
   font-size: 3rem;
   font-family: "roboto";
   font-weight: bold;
-  text-shadow: -1px 0 rgb(255, 255, 255), 0 1px white, 1px 0 white, 0 -1px white;
 }
 
 #logo span {
   color: red;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .form-control {
@@ -185,7 +183,7 @@ iframe {
 }
 
 .containers {
-  padding: 15px;
+  padding: 30px;
 }
 
 .photosimon {
@@ -197,6 +195,18 @@ iframe {
 .textinfo {
   font-family: "roboto";
   font-weight: bold;
+  margin-top: 15px;
+}
+
+.textinfo2 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.textinfo3 {
+  margin-top: 15px;
+  font-family: 'Mohave', sans-serif;
+  font-size: 30px;
+  border-style: solid;
 }
 
 .buttonpaypal {
@@ -208,6 +218,7 @@ iframe {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 40px;
 }
 
 .video {
@@ -223,7 +234,25 @@ iframe {
   position: absolute;
   bottom: 0;
   width: 100%;
-  padding: 15px 0;
+  padding: 5px 0;
+}
+
+.footermusic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  bottom: 0;
+  width: 100%;
+  padding: 5px 0;
+  position: absolute;
+}
+
+.footermusic a {
+  margin: 10px;
+  text-decoration: none;
+  font-family: "roboto";
+  color: white;
 }
 
 .footer a {
@@ -289,5 +318,21 @@ iframe {
   #formcool input {
     padding: 15px;
     max-width: 250px;
+  }
+  #logo {
+    font-size: 40px;
+    font-family: "roboto";
+    font-weight: bold;
+    text-shadow: -1px 0 rgb(255, 255, 255), 0 1px white, 1px 0 white, 0 -1px white;
+  }
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 5px 0;
   }
 }
