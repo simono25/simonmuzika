@@ -255,14 +255,14 @@ iframe {
   margin: 10px;
   text-decoration: none;
   font-family: "roboto";
-  color: white;
+  color: #88ff80;
 }
 
 .footer a {
   margin: 10px;
   text-decoration: none;
-  font-family: arial;
-  color: white;
+  font-family: "roboto";
+  color: #88ff80;
 }
 
 @media (max-width: 600px) {
