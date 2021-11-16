@@ -141,15 +141,18 @@ nav img {
   border-radius: 5px;
 }
 
-.btn.btn-outline-dark {
+.btnenvoyer {
   background: black;
   color: white;
   padding: 15px 30px;
   border-radius: 10px;
   border: 1px solid white;
+  cursor: pointer;
+  -webkit-box-shadow: 11px 12px 10px 8px rgba(0, 0, 0, 0.43);
+  box-shadow: 11px 12px 10px 8px rgba(0, 0, 0, 0.43);
 }
-.btn.btn-outline-dark:hover {
-  background-color: #c27474;
+.btnenvoyer:hover {
+  background-color: #2b2b2b;
 }
 
 .form-control::placeholder {
@@ -167,6 +170,7 @@ nav img {
 .millieux {
   text-align: center;
   background-size: cover;
+  min-height: 440px;
 }
 
 #input-message {
