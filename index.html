@@ -25,7 +25,21 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav>
+    <nav id="navmobile">
+      <div id="menuToggle">
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul id="menu">
+          <a href="index.html"><li>Accueil</li></a>
+          <a href="music.html"><li>Ma musique</li></a>
+          <a href="contact.html"><li>Contacte moi</li></a>
+        </ul>
+      </div>
+      <div id="logo2">Simon's <span>Muzika</span></div>
+    </nav>
+    <nav id="navdesktop">
       <div id="logo">Simon's <span>Muzika</span></div>
       <ul>
         <li><a href="index.html">Accueil</a></li>
@@ -35,15 +49,27 @@
     </nav>
     <div class="containers">
       <img class="photosimon" src="images/Simon.jpg" alt="Mr.frenette" />
-      <h2 class="textinfo">Bonjour, ici Simon's Muzika</h2>
+      <h2 class="textinfo">Bonjour, ici <span>Simon's Muzika!</span></h2>
       <h2 class="textinfo2">
         Je suis un cr&eacuteateur de musiques avec autotune et je fais des
         chansons avec des lyrics assez sp&eacutecial LOL
       </h2>
       <h2 class="textinfo3">Abonnez-vous!😃😃</h2>
+
+      <h2 class="textinfo4">Nouvelle musique!</h2>
+      <iframe
+        class="ytnews"
+        src="https://www.youtube.com/embed/WPThf1FFVoE"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
     </div>
     <div class="footer">
-      <a href="https://www.facebook.com/simon.frenette.902">|Ma page Facebook|</a>
+      <a href="https://www.facebook.com/simon.frenette.902"
+        >|Ma page Facebook|</a
+      >
       <a href="https://simonmuzika.bandcamp.com/album/perce-coeur"
         >|Bandcamp Album|</a
       >

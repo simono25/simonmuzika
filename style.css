@@ -11,11 +11,16 @@ body {
     rgba(203, 97, 97, 1) 50%,
     rgba(218, 169, 100, 1) 100%
   );
-  position: relative;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-nav {
+#navmobile {
+  display: none;
+}
+
+#navdesktop {
   display: flex;
   background-color: rgba(255, 255, 255, 0.7);
   align-items: center;
@@ -24,14 +29,14 @@ nav {
   box-shadow: 11px 12px 10px 8px rgba(0, 0, 0, 0.43);
 }
 
-nav ul {
+#navdesktop ul {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-left: auto;
 }
 
-ul li {
+#navdesktop ul li {
   transition: 0.7s all;
   border-radius: 10px;
   border: 2px solid;
@@ -44,22 +49,22 @@ ul li {
   padding: 10px;
   margin-right: 15px;
 }
-ul li:last-of-type {
+#navdesktop ul li:last-of-type {
   margin-right: 0;
 }
 
-ul li:hover {
+#navdesktop ul li:hover {
   background-color: #e1e1e1;
 }
 
-ul li a {
+#navdesktop ul li a {
   text-decoration: none;
   font-size: 25px;
   font-family: arial;
   color: #1e1e1e;
 }
 
-ul li a:hover {
+#navdesktop ul li a:hover {
   color: tomato;
 }
 
@@ -72,10 +77,6 @@ h1 {
   justify-content: center;
 }
 
-nav img {
-  height: 100%;
-}
-
 .message {
   text-shadow: 2px 2px 5px white;
   font-size: 50px;
@@ -85,6 +86,7 @@ nav img {
   margin: 0;
   padding: 0;
   overflow: hidden;
+  flex-grow: 1;
 }
 
 .music {
@@ -178,8 +180,8 @@ nav img {
   max-width: 400px;
 }
 
-iframe {
-  border-radius: 25px;
+.ytvideo {
+  border-radius: 30px;
   padding: 1rem;
   width: 500;
   height: 250;
@@ -202,14 +204,28 @@ iframe {
 }
 
 .textinfo2 {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "roboto";
+  margin-left: -4px;
 }
 
 .textinfo3 {
   margin-top: 15px;
-  font-family: 'Mohave', sans-serif;
+  font-family: "Mohave", sans-serif;
   font-size: 30px;
-  border-style: solid;
+}
+
+.textinfo4 {
+  font-size: 25px;
+  font-family: "Courier New", Courier, monospace;
+  margin-top: 100px;
+}
+
+.ytnews {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border-radius: 15px;
+  width: 500px;
+  height: 250px;
 }
 
 .buttonpaypal {
@@ -234,7 +250,6 @@ iframe {
   justify-content: center;
   align-items: center;
   background: black;
-  position: absolute;
   bottom: 0;
   width: 100%;
   padding: 5px 0;
@@ -248,7 +263,6 @@ iframe {
   bottom: 0;
   width: 100%;
   padding: 5px 0;
-  position: absolute;
 }
 
 .footermusic a {
@@ -266,33 +280,33 @@ iframe {
 }
 
 @media (max-width: 600px) {
-  nav {
-    flex-direction: column;
-  }
-  nav ul {
-    flex-direction: column;
-    margin-left: 0;
+  #navmobile {
+    display: flex;
+    padding: 35px;
+    background: black;
+    align-items: center;
   }
 
-  nav ul li {
-    margin-bottom: 5px;
-    margin-right: 0;
+  #navdesktop {
+    display: none;
   }
-  nav ul li:last-of-type {
-    margin-bottom: 0;
+
+  .ytvideo {
+    height: 175px;
+    width: 300px;
   }
-  body {
-    background: rgb(153, 102, 187);
-    background: linear-gradient(
-      90deg,
-      rgba(153, 102, 187, 1) 0%,
-      rgba(203, 97, 97, 1) 50%,
-      rgba(218, 169, 100, 1) 100%
-    );
-    position: relative;
-    min-height: 100vh;
-    padding-bottom: 100px;
+
+  #logo2 {
+    font-size: 35px;
+    color: white;
+    font-family: "roboto";
+    margin-left: 40px;
   }
+
+   #logo2 span {
+     color: red;
+   }
+
   #logo {
     display: flex;
     justify-content: center;
@@ -303,9 +317,12 @@ iframe {
     flex-direction: column;
     align-items: center;
   }
-  iframe {
-    width: 300px;
-    height: 150px;
+  .ytnews {
+    width: 100%;
+    height: 175px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 15px;
   }
   .buttonpaypal {
     display: flex;
@@ -316,7 +333,6 @@ iframe {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 60px;
   }
   #formcool input {
     padding: 15px;
@@ -324,18 +340,132 @@ iframe {
   }
   #logo {
     font-size: 40px;
-    font-family: "roboto";
-    font-weight: bold;
-    text-shadow: -1px 0 rgb(255, 255, 255), 0 1px white, 1px 0 white, 0 -1px white;
   }
-  .footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: black;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    padding: 5px 0;
-  }
+}
+
+#menuToggle {
+  display: block;
+
+  top: 50px;
+  left: 50px;
+
+  z-index: 1;
+
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a {
+  text-decoration: none;
+  color: #232323;
+
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover {
+  color: tomato;
+}
+
+#menuToggle input {
+  display: block;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+
+  cursor: pointer;
+
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+
+  background: #cdcdcd;
+  border-radius: 3px;
+
+  z-index: 1;
+
+  transform-origin: 4px 0px;
+
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+}
+
+#menuToggle span:first-child {
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu {
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+#menu li {
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul {
+  transform: none;
 }
