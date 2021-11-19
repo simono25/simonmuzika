@@ -200,6 +200,7 @@ h1 {
 
 .containers {
   padding: 30px;
+  flex-grow: 1;
 }
 
 .photosimon {
@@ -281,6 +282,10 @@ h1 {
   text-decoration: none;
   font-family: "roboto";
   color: #88ff80;
+  border: 1.5px solid;
+  border-color: white;
+  padding: 5px;
+  border-radius: 8px;
 }
 
 .footer a {
@@ -288,6 +293,10 @@ h1 {
   text-decoration: none;
   font-family: "roboto";
   color: #88ff80;
+  border: 1.5px solid;
+  border-color: white;
+  padding: 5px;
+  border-radius: 8px;
 }
 
 @media (max-width: 600px) {
