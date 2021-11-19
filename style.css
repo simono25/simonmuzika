@@ -330,6 +330,7 @@ h1 {
   #logo2 a {
     text-decoration: none;
     color: white;
+    font-size: 26px;
   }
 
    #logo2 span {
@@ -397,10 +398,10 @@ h1 {
 
 #menuToggle input {
   display: block;
-  width: 50px;
+  width: 59px;
   height: 50px;
   position: absolute;
-  top: 12px;
+  top: 15px;
   left: 7px;
 
   cursor: pointer;
