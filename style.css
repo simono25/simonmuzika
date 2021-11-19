@@ -241,8 +241,14 @@ h1 {
 }
 
 .buttonpaypal {
-  max-width: 20px;
+  max-width: 10px;
   margin-left: 5px;
+}
+
+input[type=image] {
+  width: 150px;
+  height: 42px;
+  border-radius: 10px;
 }
 
 .videos {
