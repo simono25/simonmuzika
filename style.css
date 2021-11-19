@@ -127,6 +127,10 @@ h1 {
   font-size: 3rem;
   font-family: "roboto";
   font-weight: bold;
+  border: 2px solid;
+  padding: 5px;
+  -webkit-box-shadow: 5px 5px 30px 3px #000000; 
+  box-shadow: 5px 5px 30px 3px #000000;
 }
 
 #logo a {
