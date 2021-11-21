@@ -171,7 +171,7 @@ h1 {
 
 .logoimg {
   background: black;
-  color: white;
+  color: #ff4d4d;
   font-size: 20px;
   border-radius: 500px;
   width: 70px;
@@ -181,6 +181,10 @@ h1 {
   align-items: center;
   -webkit-animation: rotate-center 1.5s ease-in-out infinite both;
   animation: rotate-center 1.5s ease-in-out infinite both;
+}
+
+.logoimg span {
+  color: #8cff78;
 }
 
 #logo a {
