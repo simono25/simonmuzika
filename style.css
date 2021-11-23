@@ -56,23 +56,20 @@ body {
   margin-right: 30px;
 }
 
-#dmbutton2 {
-  background: white;
-  padding: 5px;
-  border-radius: 100px;
-  height: 30px;
-  display: none;
-  border: none;
+.dark-mode {
+  background: #292929;
+  color: white;
 }
 
-#dmbutton {
-  background: black;
-  color: white;
-  height: 30px;
-  align-items: center;
+.btn {
   padding: 5px;
-  border-radius: 100px;
-  border: none;
+  border-radius: 5px;
+  border: 1px solid black;
+  background: white;
+  font-weight: 900;
+  font-family: "roboto";
+  cursor: pointer;
+
 }
 
 #navdesktop ul li:last-of-type {
@@ -96,18 +93,13 @@ body {
   color: tomato;
 }
 
-h1 {
-  color: black;
-  margin-bottom: 50px;
-  margin-top: 50px;
-  font-family: "Roboto";
-  display: flex;
-  justify-content: center;
-}
+
 
 .message {
-  text-shadow: 2px 2px 5px white;
   font-size: 50px;
+  font-family: "roboto";
+  margin-bottom: 25px;
+  margin-top: 25px;
 }
 
 .dmbutton {
@@ -142,9 +134,8 @@ h1 {
   margin-top: 50px;
   margin-bottom: 50px;
   top: 100px;
-  font-family: "Mohave", sans-serif;
+  font-family: "roboto";
   font-size: 25px;
-  text-shadow: 2px 2px 5px white;
 }
 
 .containera {
