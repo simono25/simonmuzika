@@ -62,7 +62,7 @@ body {
 }
 
 .btn {
-  background-image: url(images/moon.png) ;
+  background-image: url(images/moon.png);
   background-size: 40px 40px;
   background-color: transparent;
   height: 40px;
@@ -85,14 +85,12 @@ body {
   font-family: "roboto";
   color: #1e1e1e;
   transition: 0.5s all;
-  font-weight: 1000 ;
+  font-weight: 1000;
 }
 
 #navdesktop ul li a:hover {
   color: tomato;
 }
-
-
 
 .message {
   font-size: 50px;
@@ -103,7 +101,6 @@ body {
 
 .dmbutton {
   display: flex;
-  
 }
 
 .container {
@@ -152,7 +149,6 @@ body {
   font-weight: bold;
   padding: 5px;
   margin-left: 10px;
-  
 }
 
 /* ----------------------------------------------
@@ -167,28 +163,26 @@ body {
  * animation rotate-center
  * ----------------------------------------
  */
- @-webkit-keyframes rotate-center {
+@-webkit-keyframes rotate-center {
   0% {
     -webkit-transform: rotate(0);
-            transform: rotate(0);
+    transform: rotate(0);
   }
   100% {
     -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 @keyframes rotate-center {
   0% {
     -webkit-transform: rotate(0);
-            transform: rotate(0);
+    transform: rotate(0);
   }
   100% {
     -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
-
-
 
 .logoimg {
   background: black;
@@ -280,7 +274,8 @@ body {
   width: 250px;
   height: 300px;
   border-radius: 50px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.50) 0px 10px 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.5) 0px 10px 10px;
 }
 
 .textinfo {
@@ -312,8 +307,8 @@ body {
   border-radius: 15px;
   width: 500px;
   height: 250px;
-  -webkit-box-shadow: 28px 25px 34px 6px rgba(0,0,0,0.8); 
-  box-shadow: 28px 25px 34px 6px rgba(0,0,0,0.8);
+  -webkit-box-shadow: 28px 25px 34px 6px rgba(0, 0, 0, 0.8);
+  box-shadow: 28px 25px 34px 6px rgba(0, 0, 0, 0.8);
 }
 
 .buttonpaypal {
@@ -321,7 +316,7 @@ body {
   margin-left: 5px;
 }
 
-input[type=image] {
+input[type="image"] {
   width: 150px;
   height: 42px;
   border-radius: 10px;
@@ -424,14 +419,13 @@ input[type=image] {
     margin-left: 10px;
     display: flex;
     align-items: center;
-    
   }
 
-   h1 {
-     font-size: 40px;
-     margin-left: 30px;
-     margin-bottom: 10px;
-   }
+  h1 {
+    font-size: 40px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+  }
 
   #logo2 a {
     text-decoration: none;
@@ -439,9 +433,9 @@ input[type=image] {
     font-size: 26px;
   }
 
-   #logo2 span {
-     color: red;
-   }
+  #logo2 span {
+    color: red;
+  }
 
   #logo {
     display: flex;
