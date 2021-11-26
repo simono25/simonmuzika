@@ -157,6 +157,12 @@ body {
   margin-left: 1px;
 }
 
+#logo:hover {
+  box-shadow: 18px 17px 36px 11px rgba(0, 0, 0, 0.62);
+  -webkit-box-shadow: 18px 17px 36px 11px rgba(0, 0, 0, 0.62);
+  -moz-box-shadow: 18px 17px 36px 11px rgba(0, 0, 0, 0.62);
+}
+
 #logo a {
   text-decoration: none;
   color: black;
@@ -311,7 +317,7 @@ input[type="image"] {
 .footermusic a {
   margin: 10px;
   text-decoration: none;
-  font-family: 'Titillium Web', sans-serif;
+  font-family: "Titillium Web", sans-serif;
   color: black;
   border: 1.5px solid;
   border-color: black;
@@ -324,7 +330,7 @@ input[type="image"] {
 .footer a {
   margin: 10px;
   text-decoration: none;
-  font-family: 'Titillium Web', sans-serif;
+  font-family: "Titillium Web", sans-serif;
   font-weight: 900;
   font-size: 20px;
   color: black;
@@ -336,7 +342,13 @@ input[type="image"] {
 }
 
 .footer a:hover {
-  color: greenyellow;
+  text-shadow: rgb(161, 255, 143) 1px 0px 0px,
+    rgb(161, 255, 143) 0.540302px 0.841471px 0px,
+    rgb(161, 255, 143) -0.416147px 0.909297px 0px,
+    rgb(161, 255, 143) -0.989992px 0.14112px 0px,
+    rgb(161, 255, 143) -0.653644px -0.756802px 0px,
+    rgb(161, 255, 143) 0.283662px -0.958924px 0px,
+    rgb(161, 255, 143) 0.96017px -0.279415px 0px;
 }
 
 @media (max-width: 600px) {
