@@ -332,6 +332,11 @@ input[type="image"] {
   border-color: black;
   padding: 2px;
   border-radius: 8px;
+  transition: 0.5s all;
+}
+
+.footer a:hover {
+  color: greenyellow;
 }
 
 @media (max-width: 600px) {
