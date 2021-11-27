@@ -101,8 +101,9 @@ body {
 .message {
   font-size: 50px;
   font-family: "roboto";
-  margin-bottom: 25px;
-  margin-top: 25px;
+  margin-bottom: 49px;
+  margin-top: 85px;
+  align-items: baseline;
 }
 
 .dmbutton {
@@ -114,6 +115,14 @@ body {
   padding: 0;
   overflow: hidden;
   flex-grow: 1;
+}
+
+.text-container {
+  border: 1px solid black;
+  margin-top: 20px;
+  background: rgba(212, 212, 212, 0.2);
+  padding: 10px;
+  width: 1075px;
 }
 
 .music {
@@ -155,12 +164,6 @@ body {
   font-weight: bold;
   padding: 5px;
   margin-left: 1px;
-}
-
-#logo:hover {
-  box-shadow: 18px 17px 36px 11px rgba(0, 0, 0, 0.62);
-  -webkit-box-shadow: 18px 17px 36px 11px rgba(0, 0, 0, 0.62);
-  -moz-box-shadow: 18px 17px 36px 11px rgba(0, 0, 0, 0.62);
 }
 
 #logo a {
@@ -211,7 +214,7 @@ body {
 .millieux {
   text-align: center;
   background-size: cover;
-  min-height: 440px;
+  min-height: 441px;
 }
 
 #input-message {
@@ -225,6 +228,8 @@ body {
   width: 500;
   height: 250;
 }
+
+
 
 .containers {
   padding: 30px;
@@ -322,9 +327,22 @@ input[type="image"] {
   border: 1.5px solid;
   border-color: black;
   padding: 2px;
+  padding-left: 5px;
+  padding-right: 5px;
   border-radius: 8px;
   font-weight: 900;
   font-size: 20px;
+  transition: 0.5s all;
+}
+
+.footermusic a:hover {
+  text-shadow: rgb(228, 228, 228) 1px 0px 0px,
+  rgb(228, 228, 228) 0.540302px 0.841471px 0px,
+  rgb(228, 228, 228) -0.416147px 0.909297px 0px,
+  rgb(228, 228, 228) -0.989992px 0.14112px 0px,
+  rgb(228, 228, 228) -0.653644px -0.756802px 0px,
+  rgb(228, 228, 228) 0.283662px -0.958924px 0px,
+  rgb(228, 228, 228) 0.96017px -0.279415px 0px;
 }
 
 .footer a {
@@ -337,18 +355,20 @@ input[type="image"] {
   border: 1.5px solid;
   border-color: black;
   padding: 2px;
+  padding-left: 5px;
+  padding-right: 5px;
   border-radius: 8px;
   transition: 0.5s all;
 }
 
 .footer a:hover {
-  text-shadow: rgb(161, 255, 143) 1px 0px 0px,
-    rgb(161, 255, 143) 0.540302px 0.841471px 0px,
-    rgb(161, 255, 143) -0.416147px 0.909297px 0px,
-    rgb(161, 255, 143) -0.989992px 0.14112px 0px,
-    rgb(161, 255, 143) -0.653644px -0.756802px 0px,
-    rgb(161, 255, 143) 0.283662px -0.958924px 0px,
-    rgb(161, 255, 143) 0.96017px -0.279415px 0px;
+  text-shadow: rgb(228, 228, 228) 1px 0px 0px,
+    rgb(228, 228, 228) 0.540302px 0.841471px 0px,
+    rgb(228, 228, 228) -0.416147px 0.909297px 0px,
+    rgb(228, 228, 228) -0.989992px 0.14112px 0px,
+    rgb(228, 228, 228) -0.653644px -0.756802px 0px,
+    rgb(228, 228, 228) 0.283662px -0.958924px 0px,
+    rgb(228, 228, 228) 0.96017px -0.279415px 0px;
 }
 
 @media (max-width: 600px) {
@@ -359,8 +379,18 @@ input[type="image"] {
     align-items: center;
   }
 
+  .text {
+    text-align: center;
+  }
+
   #navdesktop {
     display: none;
+  }
+
+  .center-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .logoimg2 {
@@ -382,6 +412,16 @@ input[type="image"] {
     width: 300px;
   }
 
+  .text-container {
+    width: 230px;
+  }
+
+  .message {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+  }
+
   .text h2 {
     font-size: 30px;
   }
@@ -397,7 +437,6 @@ input[type="image"] {
 
   h1 {
     font-size: 40px;
-    margin-left: 30px;
     margin-bottom: 10px;
   }
 
@@ -478,12 +517,9 @@ input[type="image"] {
   position: absolute;
   top: 15px;
   left: 7px;
-
   cursor: pointer;
-
   opacity: 0; /* hide this */
   z-index: 2; /* and place it over the hamburger */
-
   -webkit-touch-callout: none;
 }
 
